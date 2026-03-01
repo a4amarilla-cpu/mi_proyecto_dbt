@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jsonplaceholder
+    database: my_db
+    schema: main
+    tables:
+      - name: posts
+      - name: users
