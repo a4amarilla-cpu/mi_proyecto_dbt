@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_posts_enriched
+    description: "Modelo intermedio que enriquece posts con información del usuario (join stg_posts + stg_users)."
+    columns:
+      - name: post_id
+        description: "ID del post."
+      - name: user_id
+        description: "ID del usuario autor del post."
+      - name: title
+        description: "Título del post."
+      - name: body
+        description: "Cuerpo del post."
+      - name: loaded_at
+        description: "Timestamp de carga."
+      - name: user_name
+        description: "Nombre del usuario."
+      - name: username
+        description: "Username del usuario."
+      - name: email
+        description: "Email del usuario."

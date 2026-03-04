@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_post
+    description: "Dimensión de posts. Contiene atributos descriptivos del post."
+    columns:
+      - name: post_id
+        description: "Clave primaria del post."
+      - name: title
+        description: "Título del post."
+      - name: body
+        description: "Cuerpo del post."
+      - name: title_len
+        description: "Largo del título."
+      - name: body_len
+        description: "Largo del cuerpo."
+      - name: loaded_at
+        description: "Timestamp de carga."
+
+  - name: fct_post
+    description: "Tabla de hechos de posts. Registra métricas por post."
+    columns:
+      - name: post_id
+        description: "Clave del post."
+      - name: title_len
+        description: "Métrica: largo del título."
+      - name: body_len
+        description: "Métrica: largo del cuerpo."
+      - name: loaded_at
+        description: "Timestamp de carga."
